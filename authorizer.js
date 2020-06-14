@@ -6,16 +6,16 @@ function authorizeClientSecret(token) {
     // if the last character in the token is a number and the number is even, then authorization succeeds
     const lastCharacter = token.slice(-1)
     if (!isNaN(lastCharacter) && ((parseInt(lastCharacter) % 2) == 0)) {
-//        json = {
-//            "active": true,
-//            "principal": "hoshikawa@hotmail.com",
-//            "scope": ["list:showhtml", "read:showhtml", "create:showhtml", "update:showhtml", "delete:showhtml", "someScope"],
-//            "clientId": "clientIdFromHeader",
-//            "expiresAt": expiry.toISOString(),
-//            "context": {
-//                "key": "value", "email": "hoshikawa2@hotmail.com", "input": token
-//            }
-//        }
+        json = {
+            "active": true,
+            "principal": "hoshikawa@hotmail.com",
+            "scope": ["list:showhtml", "read:showhtml", "create:showhtml", "update:showhtml", "delete:showhtml", "someScope"],
+            "clientId": "clientIdFromHeader",
+            "expiresAt": expiry.toISOString(),
+            "context": {
+                "key": "value", "email": "hoshikawa2@hotmail.com", "input": token
+            }
+        }
         json =
             {
                 "active": true,
